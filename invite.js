@@ -26,7 +26,7 @@
       ${e.line ? `<p class="ev-line a" style="--o:3">${esc(e.line)}</p>` : ''}
       ${e.wear ? `<p class="ev-wear a" style="--o:3">${esc(e.wear)}</p>` : ''}
       ${e.dress ? `<div class="ev-dress a" style="--o:3">${e.dress.map(([who, what]) => `<p><b>${esc(who)}</b>${esc(what)}</p>`).join('')}</div>` : ''}
-      ${e.times ? `<div class="ev-when ev-times a" style="--o:4">${e.times.map(([what, from, to]) => `<p><b>${esc(what)}</b><span class="ev-time">${clock(from).time}<small>${clock(from).ap}</small>${to ? ` – ${clock(to).time}<small>${clock(to).ap}</small>` : ''}</span></p>`).join('')}${e.note ? `<span class="ev-note">${esc(e.note)}</span>` : ''}</div>` : `<p class="ev-when a" style="--o:4"><span class="ev-time">${c.time}<small>${c.ap}</small>${e.end ? ` – ${clock(e.end).time}<small>${clock(e.end).ap}</small>` : ''}</span>${e.note ? `<span class="ev-note">${esc(e.note)}</span>` : ''}</p>`}
+      <p class="ev-when a" style="--o:4"><span class="ev-time">${c.time}<small>${c.ap}</small></span>${e.note ? `<span class="ev-note">${esc(e.note)}</span>` : ''}</p>
       <a class="ev-map a" style="--o:5" href="${esc(pl.map)}" target="_blank" rel="noreferrer">
         <span class="ev-pin">${pin}</span>
         <span class="ev-place"><b>${esc(pl.name)}</b>${pl.detail ? `<small>${esc(pl.detail)}</small>` : ''}</span>
@@ -58,7 +58,7 @@
       </div>
       <p class="hd-where rv" style="--d:1.85s">${bigClock.time} ${bigClock.ap} · ${esc(I.places[mainEvent.place].name)}, ${esc(I.city)}</p>
       <div class="hero-stage">
-        <div class="hero-photo">${I.photo ? `<img src="${esc(I.photo)}" alt="${esc(I.groom)} and ${esc(I.bride)}" width="1000" height="1500" fetchpriority="high">` : ''}</div>
+        <div class="hero-photo"><img src="images/couple-photo.webp" alt="${esc(I.groom)} and ${esc(I.bride)} sitting close together, laughing" width="1000" height="1500" fetchpriority="high"></div>
       </div>
     </section>
 

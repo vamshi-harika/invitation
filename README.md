@@ -1,4 +1,4 @@
-# Sravan Kumar & Sandhya: the family letter
+# Krishna Vamshi & Harika: the family letter
 
 A tap-to-open envelope invitation for close family. Plain HTML, CSS and JS, with no build step.
 
@@ -17,11 +17,11 @@ Everything you'd want to edit is in `details.js`: names, events, places, wording
 
 ## Pictures
 
-Everything is in `images/`, already cut out and sized. To add the couple photo, put it in `images/` and set `photo` in `details.js`.
+Everything is in `images/`, already cut out and sized.
 
 | File | Where it shows |
 | --- | --- |
-| `seal.webp` | The wax seal on the envelope |
+| `couple-photo.webp` | Top of the letter |
 
 ## Publish
 

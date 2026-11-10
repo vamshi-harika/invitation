@@ -82,7 +82,7 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--line); outline-
 .stage.opening .address { opacity: 0; }
 
 .seal {
-  position: absolute; left: 22.28%; top: 13.58%; width: 54.8%; aspect-ratio: 674 / 660; z-index: 6;
+  position: absolute; left: 22.28%; top: 14.65%; width: 54.8%; aspect-ratio: 674 / 641; z-index: 6;
   padding: 0; border: 0; background: none; cursor: pointer;
   animation: seal-breathe 2.6s 1.6s ease-in-out infinite;
   -webkit-tap-highlight-color: transparent;
@@ -233,9 +233,6 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--line); outline-
 .ev-time { font: 600 1.4rem/1.15 var(--display); font-variant-numeric: lining-nums; }
 .ev-time small { font-size: .6em; letter-spacing: .1em; margin-left: .3em; }
 .ev-note { font: italic 500 .98rem/1.25 var(--display); color: var(--soft); }
-.ev-times { gap: 10px; }
-.ev-times p { display: flex; flex-direction: column; align-items: center; }
-.ev-times b { font: 600 .66rem/1.5 var(--display); letter-spacing: .2em; margin-right: -.2em; text-transform: uppercase; color: var(--amp); }
 .ev-map {
   position: relative; z-index: 1; display: flex; align-items: center; gap: 6px; margin-top: 13px; min-height: 46px; padding: 5px 12px 5px 7px; text-align: left;
   border-radius: 12px; background: var(--black); color: var(--paper); text-decoration: none;

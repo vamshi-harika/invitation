@@ -1,15 +1,11 @@
 // EDIT THIS FILE. Every name, date, place and line of copy on the invitation lives here.
 
 window.INVITE = {
-  groom: 'Sravan Kumar',
-  bride: 'Sandhya',
-  shortNames: 'Sravan Kumar & Sandhya', // used in the sign-off
+  groom: 'Krishna Vamshi',
+  bride: 'Harika',
+  shortNames: 'Krishna Vamshi & Harika', // used in the sign-off
   city: 'Hyderabad',
-  muhurtham: '2026-11-26T09:28:00+05:30', // drives the countdown
-
-  // The couple's photo at the top of the letter, e.g. 'images/couple-photo.webp' (portrait, 2:3).
-  // Blank shows an empty frame in its place.
-  photo: '',
+  muhurtham: '2026-11-21T10:04:00+05:30', // drives the countdown
 
   // Optional background song. Put the file in this folder, e.g. './song.mp3'. Blank hides the music button.
   music: 'song.mp3',
@@ -19,18 +15,21 @@ window.INVITE = {
   autoScroll: 40,
 
   places: {
-    aarwa: { name: 'Aarwa Retreat Farm Stays', detail: 'Koyalagudem, Choutuppal', map: 'https://maps.app.goo.gl/Xo3HqKFcCWT9Ur7F6' },
-    pellikuthuru: { name: 'Bride’s Home', detail: '', map: 'https://www.google.com/maps?q=17.425251007080078,78.57561492919922&z=17&hl=en' },
-    hall: { name: 'ME Reddy Function Hall', detail: 'Sahara Road, Opp. Sushma Theatre, Vanasthalipuram', map: 'https://www.google.com/maps/place//data=!4m2!3m1!1s0x3bcba1fdfc5623bf:0x96d49e22e71cbe09?hl=en' },
-    vratham: { name: 'Vratham Venue', detail: '', map: 'https://www.google.com/maps?q=17.334638595581055,78.59403228759766&z=17&hl=en' },
+    groom: { name: 'Groom’s Home', detail: 'Flat 212', map: 'https://maps.app.goo.gl/fdZjcuTYxNsHtFoV9' },
+    bride: { name: 'Bride’s Home', detail: 'Flat 203', map: 'https://maps.app.goo.gl/wadfD2nu8aisLq6y7' },
+    arden: { name: 'Arden Lakefront', detail: '', map: 'https://maps.app.goo.gl/3h37WiJhQoktGzfKA' },
+    kbr: { name: 'KBR Convention', detail: '', map: 'https://maps.app.goo.gl/6szL4xWuC4VZwLhQ7' },
   },
 
-  // In date order. Time is 24-hour, India time; `end` is optional, and `times` lists several parts of one day on a single card. Each event shows the map for its own place.
+  // In date order. Time is 24-hour, India time. Each event shows the map for its own place.
   events: [
-    { date: '2026-11-22', time: '15:00', title: 'Haldi & Sangeeth', telugu: 'హల్దీ & సంగీత్', place: 'aarwa', note: '', times: [['Haldi', '15:00', '18:00'], ['Sangeeth', '20:00', '23:00']] },
-    { date: '2026-11-25', time: '00:00', title: 'Pellikuthuru', telugu: 'పెళ్లికూతురు', place: 'pellikuthuru', note: '' },
-    { date: '2026-11-26', time: '09:28', title: 'The Marriage', telugu: 'సుముహూర్తం', place: 'hall', main: true, note: 'Lunch from 12:00 noon onwards', line: 'Dhanassu Lagnam.' },
-    { date: '2026-11-27', time: '07:00', title: 'Satyanarayana Vratham', telugu: 'సత్యనారాయణ వ్రతం', place: 'vratham', note: '' },
+    { date: '2026-11-16', time: '10:00', title: 'Pasupu Muhurtham', telugu: 'పసుపు ముహూర్తం', place: 'groom', note: 'Lunch follows', line: 'The first yellow of the wedding.' },
+    { date: '2026-11-17', time: '09:30', title: 'Pochamma Panduga', telugu: 'పోచమ్మ పండుగ', place: 'groom', note: 'Breakfast & lunch follows', },
+    { date: '2026-11-18', time: '11:00', title: 'Haldi & Mehandi', telugu: 'హల్దీ & మెహందీ', place: 'arden', note: 'Lunch & dinner follows', dress: [['Haldi', 'Shades of Sunshine, wear your brightest yellows'], ['Mehandi', 'Tropical Brights, think bold colours and florals']] },
+    { date: '2026-11-19', time: '10:00', title: 'Pellikoduku & Pooja', telugu: 'పెళ్లికొడుకు & పూజ', place: 'groom', note: 'Breakfast & lunch follows', line: 'Vamshi officially becomes the groom. Bring your camera.' },
+    { date: '2026-11-21', time: '10:04', title: 'The Marriage', telugu: 'సుముహూర్తం', place: 'kbr', main: true, note: '', line: '10:04 sharp.', wear: 'Let’s celebrate in traditional hues' },
+    { date: '2026-11-22', time: '11:30', title: 'Satyanarayana Katha', telugu: 'సత్యనారాయణ కథ', place: 'groom', note: 'Lunch follows', line: 'At the groom’s home, first.' },
+    { date: '2026-11-23', time: '11:30', title: 'Satyanarayana Katha', telugu: 'సత్యనారాయణ కథ', place: 'bride', note: 'Lunch follows', line: 'Then the bride’s side takes its turn.' },
   ],
 
   text: {
@@ -41,7 +40,7 @@ window.INVITE = {
     letterHello: 'With love,', // on the letter as it slides out of the envelope
     letter: 'You already knew. You probably helped. The big invitation went out to everyone, but this one is just for the people we want beside us from the first pinch of turmeric to the prasadam.',
     scheduleTitle: 'Mark your calendars',
-    closingTitle: 'See you on the 22nd.',
+    closingTitle: 'See you on the 16th.',
     signoff: 'With all our love,',
   },
 };
